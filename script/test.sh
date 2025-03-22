@@ -23,7 +23,7 @@ for dir in $MOD_DIRS; do
   echo "testing $dir"
   (
     cd "$dir"
-    go test -parallel=25 "$@"
+    go test -parallel=15 "$@"
   ) || FAILED=1
 done
 
